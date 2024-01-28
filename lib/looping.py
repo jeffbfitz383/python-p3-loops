@@ -1,13 +1,33 @@
 #!/usr/bin/env python3
 
 def happy_new_year():
-    # code goes here!
-    pass
+        start = 10
+        while start > 0:
+            print(start)
+            start = start -1
+        print("Happy New Year!")
 
 def square_integers(int_list):
-    # code goes here!
-    pass
+    all =[]
+    for i in range(len(int_list)):
+        j = (int_list[i]) ** 2
+        all.append(j)
+    return all
 
 def fizzbuzz():
-    # code goes here!
-    pass
+    for i in range(1,101):
+        if i % 15 == 0:
+            print("FizzBuzz")
+        elif i % 5 == 0:
+            print("Buzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        else:
+            print(i)
+
+fizzbuzz()
+
+
+
+
+
